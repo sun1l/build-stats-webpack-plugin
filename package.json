@@ -1,0 +1,45 @@
+{
+  "name": "build-stats-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin to generate build stats.",
+  "scripts": {
+    "lint": "eslint lib",
+    "build": "npm run lint && rimraf dist && babel lib --out-dir dist/",
+    "prepublish": "npm run lint && npm run build"
+  },
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sun1l/build-stats-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "stats",
+    "chunks",
+    "output",
+    "entry",
+    "assets",
+    "dev",
+    "build",
+    "tool",
+    "devtools"
+  ],
+  "author": {
+    "name": "Sunil Kumar",
+    "url": "https://twitter.com/sun1lkumar"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sun1l/build-stats-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/sun1l/build-stats-webpack-plugin#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0",
+    "rimraf": "^2.6.2"
+  }
+}
